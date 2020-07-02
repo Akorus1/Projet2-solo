@@ -47,9 +47,10 @@ if(isset($_GET['submit'])){
         <a style=\"margin:43%;\" href=\"../../Accueil_et_Mentions_légales/Accueil.php\">Retourner à l'accueil</a>
         <script type=\"text/javascript\">
         $(document).ready(function() {
-                    $(\"button\").remove();             
+                    $('#bouton').remove();             
             });
 </script>";
+error_reporting(0);
         /*header ('Location: http://projet2/Projet-2-Veille-techno/Accueil_et_Mentions_légales/Accueil.php');*/
 } ?>
  <form action="Commande.php" id="form" method="get">

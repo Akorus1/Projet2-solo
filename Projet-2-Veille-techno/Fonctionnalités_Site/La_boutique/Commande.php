@@ -13,7 +13,7 @@ $date = $_POST['date'];
 
 if(isset($_POST['submit'])) 
 {
-        $requete2 = $bdd->prepare("INSERT INTO `commande` (`Nom_client`, `Num_telephone_client`, `Adresse_mail_client`, `Nom_entreprise`, `Localisation_entreprise`, `Nom_produits`, `Date` ) VALUES(:nom, :num, :mail, :nom_entreprise, :localisation_entreprise, :nom_produits, :date)");
+        $requete2 = $bdd->prepare("INSERT INTO `commandes` (`Nom_client`, `Num_telephone_client`, `Adresse_mail_client`, `Nom_entreprise`, `Localisation_entreprise`, `Nom_produits`, `Date` ) VALUES(:nom, :num, :mail, :nom_entreprise, :localisation_entreprise, :nom_produits, :date)");
         $requete2->bindParam(':nom', $nom, PDO::PARAM_STR);
         $requete2->bindParam(':num', $num, PDO::PARAM_INT);
         $requete2->bindParam(':mail', $email, PDO::PARAM_STR);
@@ -59,7 +59,7 @@ if(isset($_POST['submit']))
    <input type="text" id="inputLieu" name="lieu_entreprise" class="form-control" placeholder="Localisation de l'entrprise">
    </br>
    <label for="inputPlace" class="sr-only"></label>
-   <input type="text" id="inputLieu" name="produits" value=" Masque<?php 
+   <input type="text" id="inputProduits" name="produits" value=" Masque<?php 
     
            $ids=implode("," , $_SESSION['commande']);
            $tab=explode("," , $ids);
@@ -69,7 +69,7 @@ if(isset($_POST['submit']))
    </br>
    </br>
    <label for="inputDate" class="sr-only">Date</label>
-   <input type="text" id="inputNom" name="date" class="form-control" placeholder="Date">
+   <input type="text" id="inputDate" name="date" class="form-control" placeholder="Date">
    </br>
 
    <a href="Connexion.php" target="blank">Déjà enregistré ? </a>

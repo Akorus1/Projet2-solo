@@ -51,10 +51,10 @@ if(isset($_GET['submit'])){
             });
 </script>";
 error_reporting(0);
-        /*header ('Location: http://projet2/Projet-2-Veille-techno/Accueil_et_Mentions_légales/Accueil.php');*/
+       
 } ?>
  <form action="Commande.php" id="form" method="get">
- <button type="submit" id="bouton" name="submit" class="btn btn-primary" value="submit" style="margin:2% 20%;"> Finaliser ma commande</button>
+ <button type="submit" id="bouton" name="submit" class="btn btn-primary" value="ok" style="margin:2% 20%;"> Finaliser ma commande</button>
  <?php   
 
         $ids=array_values($_SESSION['panier']);

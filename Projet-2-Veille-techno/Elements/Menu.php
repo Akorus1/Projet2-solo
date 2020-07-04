@@ -18,8 +18,8 @@
 </div>
   <a class="btn btn-dark" href="http://projet2-solo/Projet-2-Veille-techno/Fonctionnalités_Site/Lequipe.php" role="button">Qui sommes-nous ?</a>
   <a class="btn btn-dark" href="http://projet2-solo/Projet-2-Veille-techno/Fonctionnalités_Site/Notresponsor.php" role="button">Notre sponsor</a>
-  <a class="btn btn-dark" href="http://projet2-solo/Projet-2-Veille-techno/Fonctionnalités_Site/Connexion.php" role="button">Se connecter</a>
-  <a class="btn btn-dark" href="http://projet2-solo/Projet-2-Veille-techno/Fonctionnalités_Site/Inscription.php" role="button">S'inscrire</a>
+  <a class="btn btn-dark" href="http://projet2-solo/Projet-2-Veille-techno/Connexion_Inscription_Déconnexion/Connexion.php" role="button" >Se connecter</a>
+  <a class="btn btn-dark" href="http://projet2-solo/Projet-2-Veille-techno/Connexion_Inscription_Déconnexion/Inscription.php" >S'inscrire</a>
   <form class="form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Chercher un produit" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">OK</button>

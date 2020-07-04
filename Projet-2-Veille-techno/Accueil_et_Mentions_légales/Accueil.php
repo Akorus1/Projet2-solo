@@ -16,12 +16,14 @@
         require_once("../Elements/menu.php"); ?>
 </header>
 <body>
+
  <div class="box">
  <h1>Solidarity Bond</h1>
  <p class="p1">Plateforme de mise en relation d'organismes en manque de matériel médical avec des fournisseurs</p>
  <p class="p2">Un projet pensé par le CESI</p>
 </div>
 </body>
+
 <footer>
         <?php require_once("../Elements/footer.php"); ?>
 </footer>

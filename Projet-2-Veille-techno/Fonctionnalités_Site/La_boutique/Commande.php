@@ -13,14 +13,25 @@ require_once("../../BDD/bdd.php");
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <title>Finalisation commandes</title>
+        <title>Finalisation commande</title>
 </head>
 <header>
 <?php  require_once("../../Elements/menu.php"); ?>
 </header>
 <body>
  <div class="box">
- <form  action="ScriptCommande.php" method="post">
+ <?php if(empty($_SESSION['panier'])){
+        echo "<p class=\"p1\" style=\"margin: auto; padding:0px; position:aboslute\">Vous n'avez choisi aucun article, vous ne pouvez pas passer de commande</p>
+        <a style=\"margin:43%;\" href=\"../../Accueil_et_Mentions_légales/Accueil.php\">Retourner à l'accueil</a>
+        <script type=\"text/javascript\">
+        $(document).ready(function() {
+                    $('#monform').remove();             
+            });
+</script>";
+/*error_reporting(0);*/
+       
+} ?>
+ <form  action="ScriptCommande.php" method="post" id="monform">
  <h2 class="text-center">Formulaire de contact</h2>
  <label for="inputLastName" class="sr-only">Nom</label>
    <input type="text" id="inputNom" name="nom" class="form-control" placeholder="Votre Nom" required autofocus>
@@ -38,13 +49,20 @@ require_once("../../BDD/bdd.php");
    <input type="text" id="inputLieu" name="lieu_entreprise" class="form-control" placeholder="Localisation de l'entrprise">
    </br>
    <label for="inputPlace" class="sr-only"></label>
-   <input type="text" id="inputProduits" name="produits" value=" Masque<?php 
-    
-           $ids=implode("," , $_SESSION['commande']);
+   <input type="text" id="inputProduits" name="produits" value="<?php  
+        
+        $ids=array_values($_SESSION['panier']);
+        $requete = $bdd->prepare('SELECT Type, Nom FROM `produits` WHERE `ID` IN ('.implode(',',$ids).')');
+        $requete->execute();
+        while($produit=$requete->fetch(PDO::FETCH_OBJ))  {
+           echo $produit->Nom .' '. $produit->Type;
+           /*$ids=implode("," , $_SESSION['articles']);
            $tab=explode("," , $ids);
            $tab1=array_unique($tab);
            $ids1=implode("," ,$tab1);
-        echo $ids1;?>" class="form-control" >
+        echo $ids1;*/
+        }
+    ?>" class="form-control" >
    </br>
    </br>
    <label for="inputDate" class="sr-only">Date</label>

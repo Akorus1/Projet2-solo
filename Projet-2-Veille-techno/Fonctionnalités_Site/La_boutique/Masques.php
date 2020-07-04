@@ -5,7 +5,7 @@ require_once("../../BDD/bdd.php");
 
 if(!isset($_SESSION['panier'])){
 $_SESSION['panier']= array();
-$_SESSION['commande']= array();
+$_SESSION['articles']= array();
 }
 ?>
 <!DOCTYPE html>

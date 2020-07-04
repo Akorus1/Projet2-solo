@@ -85,9 +85,9 @@ error_reporting(0);
                <input type="hidden" name="nom" value="<?php echo $produit->Nom ?>" ></hidden>
                
                <?php
-               if(isset($_SESSION['commande'], $produit->Type)) {           
-               array_push($_SESSION['commande'], $produit->Type);
-               unset($_SESSION['commande'][$produit->Type]);
+               if(isset($_SESSION['articles'], $produit->Type)) {           
+               array_push($_SESSION['articles'], $produit->Type);
+               unset($_SESSION['articles'][$produit->Type]);
                }
                /* unset($_SESSION['panier']);== $_SESSION['commande']['Type'])*/
          } ?>               

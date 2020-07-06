@@ -1,10 +1,4 @@
-<?php 
-if(isset($_SESSION['login'])){
-    
-}else{
-    header('Location: http://projet2-solo/Projet-2-Veille-techno/Connexion_Inscription_Déconnexion/Connexion.php');
-} ?>
-
+<?php   session_start(); ?>
 <?php 
 error_reporting(0);
 require_once("../BDD/bdd.php");

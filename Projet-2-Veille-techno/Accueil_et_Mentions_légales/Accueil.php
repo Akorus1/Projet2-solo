@@ -1,13 +1,6 @@
 <?php 
         error_reporting(0);
-        if(isset($_SESSION['login']))
-        {      
-                session_start();
-        }
-        elseif(!empty($_SESSION))
-        {
-                session_start();
-        }
+         session_start();
 ?>
 <!DOCTYPE html>
 <html lang="fr">

@@ -17,11 +17,23 @@
   </div>
 </div>
   <a class="btn btn-dark" href="http://projet2-solo/Projet-2-Veille-techno/Fonctionnalités_Site/Lequipe.php" role="button">Qui sommes-nous ?</a>
-  <a class="btn btn-dark" href="http://projet2-solo/Projet-2-Veille-techno/Fonctionnalités_Site/Notresponsor.php" role="button">Notre sponsor</a>
-  <a class="btn btn-dark" href="http://projet2-solo/Projet-2-Veille-techno/Connexion_Inscription_Déconnexion/Connexion.php" role="button" >Se connecter</a>
-  <a class="btn btn-dark" href="http://projet2-solo/Projet-2-Veille-techno/Connexion_Inscription_Déconnexion/Inscription.php" >S'inscrire</a>
+  <a class="btn btn-dark" href="http://projet2-solo/Projet-2-Veille-techno/Connexion_Inscription_Déconnexion/Connexion.php" id="Conn" role="button" >Se connecter</a>
+  <a class="btn btn-dark" href="http://projet2-solo/Projet-2-Veille-techno/Connexion_Inscription_Déconnexion/Inscription.php" id="Insc" role="button">S'inscrire</a>
   <form class="form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Chercher un produit" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">OK</button>
   </form>
 </nav>
+
+<?php 
+if(isset($_SESSION['login']))
+{
+?>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#Conn").replaceWith("<a class=\"btn btn-dark\" href=\"http://projet2-solo/Projet-2-Veille-techno/Connexion_Inscription_Déconnexion/Deconnexion.php\" role=\"button\" >Se déconnecter</a>");
+  $("#Insc").replaceWith("<a class=\"btn btn-dark\" href=\"http://projet2-solo/Projet-2-Veille-techno/Fonctionnalités_Site/Annonces.php\" role=\"button\" >Les annonces</a>");  
+    });
+</script>
+
+<?php } ?>

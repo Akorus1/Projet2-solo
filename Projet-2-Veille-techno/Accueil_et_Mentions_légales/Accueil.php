@@ -1,3 +1,14 @@
+<?php 
+        error_reporting(0);
+        if(isset($_SESSION['login']))
+        {      
+                session_start();
+        }
+        elseif(!empty($_SESSION))
+        {
+                session_start();
+        }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -20,7 +31,8 @@
  <div class="box">
  <h1>Solidarity Bond</h1>
  <p class="p1">Plateforme de mise en relation d'organismes en manque de matériel médical avec des fournisseurs</p>
- <p class="p2">Un projet pensé par le CESI</p>
+ <p class="p2">Un projet pensé par le CESI</p><br>
+ <p class="p1">Ce site contient des annonces inscrivez-vous pour pouvoir y accéder</p>
 </div>
 </body>
 

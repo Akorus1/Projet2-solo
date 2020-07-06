@@ -19,35 +19,35 @@
   <div class="form-row">
     <div class="form-group col-md-4">
       <label for="inputEmail4">Nom Prénom</label>
-      <input type="text" class="form-control" name="Nom" id="inputEmail4">
+      <input type="text" class="form-control" name="Nom" id="inputEmail4" required autofocus>
     </div>
     <div class="form-group col-md-4">
       <label for="inputPassword4">Localisation</label>
-      <input type="text" class="form-control" name="Localisation" id="inputPassword4">
+      <input type="text" class="form-control" name="Localisation" id="inputPassword4" required>
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-4">
       <label for="inputEmail4">Nom de l'entrepise</label>
-      <input type="text" class="form-control" name="nom_ent" id="inputEmail4">
+      <input type="text" class="form-control" name="nom_ent" id="inputEmail4"  required>
     </div>
     <div class="form-group col-md-4">
       <label for="inputPassword4">Localisation de l'entreprise</label>
-      <input type="text" class="form-control" name="Loc_ent" id="inputPassword4">
+      <input type="text" class="form-control" name="Loc_ent" id="inputPassword4"  required>
     </div>
   </div>
   <div class="form-group" style="width:66.5%;">
     <label for="inputAddress">Adresse mail</label>
-    <input type="email"  class="form-control" name="mail" id="inputAddress" placeholder="example@boite.com">
+    <input type="email"  class="form-control" name="mail" id="inputAddress" placeholder="example@boite.com"  required>
   </div>
   <div class="form-group" style="width:66.5%;">
     <label for="inputAddress2">Mot de passe</label>
-    <input type="password" class="form-control" name="mdp" id="inputAddress2">
+    <input type="password" class="form-control" name="mdp" id="inputAddress2"  required>
   </div>
   <div class="form-row">
     <div class="form-group col-md-4">
       <label for="inputCity">Numéro de téléphone</label>
-      <input type="number" class="form-control" name="num" id="inputCity">
+      <input type="number" class="form-control" name="num" id="inputCity"  required>
     </div>
     <div class="form-group col-md-4">
       <label for="inputState">Êtes-vous un</label>

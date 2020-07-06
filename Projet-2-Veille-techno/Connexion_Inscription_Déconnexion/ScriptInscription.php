@@ -42,7 +42,7 @@ if(isset($_POST['submit'])) //Si l'utilisateur appuie sur Inscription...
                 //Renvoi d'eventuelles erreurs de traitement de la bdd 
                 $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 //Insertion des données saisies par l'utilisateur dans la bdd
-                $requete2 = $bdd->prepare("INSERT INTO `clients` (`Nom`, `Localisation`, `Nom_entreprise`, `Localisation_entreprise`, `Adresse_mail`, `Mot de passe`, `Num_telephone`) VALUES(:nom, :localisation, :nom_ent, :localisation_ent, :email, :motdepasse, :num)");
+                $requete2 = $bdd->prepare("INSERT INTO `clients` (`Nom`, `Localisation`, `Nom_entreprise`, `Localisation_entreprise`, `Adresse_mail`, `Mot_de_passe`, `Num_telephone`) VALUES(:nom, :localisation, :nom_ent, :localisation_ent, :email, :motdepasse, :num)");
                 $requete2->bindParam(':nom', $nom, PDO::PARAM_STR);
                 $requete2->bindParam(':localisation', $localisation, PDO::PARAM_STR);
                 $requete2->bindParam(':nom_ent', $nom_ent, PDO::PARAM_STR);

@@ -20,7 +20,7 @@
  <h1>Solidarity bond</h1>
  <p class="p1">Votre commande a bien été prise en compte un fournisseur vous contactera sous peu</p>
  <p class="p2">Nous vous remercions de votre confiance</p>
- <a style="margin:43%;" href="../../Accueil_et_Mentions_légales/Accueil.php">Retourner à l'accueil</a>
+ <a style="margin:43%;" href="../../Accueil_et_Mentions_légales/index.php">Retourner à l'accueil</a>
 </div>
  
 </body>

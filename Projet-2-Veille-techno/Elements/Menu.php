@@ -3,7 +3,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <nav class="navbar navbar-dark bg-dark">
-<a class="btn btn-dark" href="http://projet2-solo/Projet-2-Veille-techno/Accueil_et_Mentions_légales/Accueil.php" role="button">Accueil</a>
+<a class="btn btn-dark" href="http://projet2-solo/Projet-2-Veille-techno/Accueil_et_Mentions_légales/index.php" role="button">Accueil</a>
   <div class="dropdown">
   <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
   La boutique

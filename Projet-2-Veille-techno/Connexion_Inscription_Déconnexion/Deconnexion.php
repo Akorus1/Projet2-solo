@@ -25,7 +25,7 @@ session_destroy();
  <div class="box">
  <h1>Solidarity Bond</h1>
  <p class="p1">Vous êtes déconnecté</p>
- <p class="p2"><a href="http://projet2-solo/Projet-2-Veille-techno/Accueil_et_Mentions_légales/Accueil.php">Retourner à l'accueil</a></p>
+ <p class="p2"><a href="http://projet2-solo/Projet-2-Veille-techno/Accueil_et_Mentions_légales/index.php">Retourner à l'accueil</a></p>
 </div>
 </body>
 </html>

@@ -44,7 +44,7 @@ if(isset($_GET['submit'])){
  <div class="box">
  <?php if(empty($_SESSION['panier'])){
         echo "<p class=\"p1\" style=\"margin: auto; padding:0px; position:aboslute\">Votre panier est vide</p>
-        <a style=\"margin:43%;\" href=\"../../Accueil_et_Mentions_légales/Accueil.php\">Retourner à l'accueil</a>
+        <a style=\"margin:43%;\" href=\"../../Accueil_et_Mentions_légales/index.php\">Retourner à l'accueil</a>
         <script type=\"text/javascript\">
         $(document).ready(function() {
                     $('#bouton').remove();             

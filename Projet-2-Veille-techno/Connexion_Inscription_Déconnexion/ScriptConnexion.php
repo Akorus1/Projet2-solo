@@ -34,7 +34,7 @@ if(isset($_POST['submit']))
                 $_SESSION['user_Nom'] = $resultat['Nom'];
                 $_SESSION['user_Mail'] = $resultat['Adresse_mail'];
 
-                require_once("../Accueil_et_Mentions_légales/Accueil.php");
+                require_once("../Accueil_et_Mentions_légales/index.php");
             }
         else
         {
